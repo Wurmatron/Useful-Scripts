@@ -5,7 +5,7 @@ import shutil
 REPO = "https://github.com/Wurmcraft/WurmTweaks2.git"
 FOLDER = "WurmTweaks2"
 DOCS_FOLDER = "Docs"
-WEB_ROOT = "Docs-WebRoot"
+WEB_ROOT = "/var/www/html/wiki"     # /var/www/html /usr/share/nginx
 
 
 def run_command(cmd):
@@ -27,8 +27,8 @@ def build_docs():
 
 
 def move_docs_to_web_dir():
-    src = os.path.dirname(__file__) + "/" + FOLDER + "/" + DOCS_FOLDER
-    target = os.path.dirname(__file__) + "/" + FOLDER + "/" + WEB_ROOT
+    src = os.path.dirname(__file__) + "/" + FOLDER + "/" + DOCS_FOLDER + "/site"
+    target = WEB_ROOT
     file_names = os.listdir(src)
     for file_name in file_names:
         shutil.copy(os.path.join(src, file_name), target)
