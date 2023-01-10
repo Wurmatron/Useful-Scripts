@@ -6,7 +6,7 @@ A collection of scripts that I have needed for various projects / server upkeep 
 
 - <a href="#RimWorld OpenWorld Server Mod Strip">RimWorld OpenWorld Mod Strip</a>
 - <a href="#MkDocs Auto-Updater">MkDocs Auto-Updater</a>
-- <a href="#S3 File Uploader">MkDocs Auto-Updater</a>
+- <a href="#S3 File Uploader">S3 File Uploader / Backup</a>
 
 ### RimWorld OpenWorld Server Mod Strip
 Script: `cleannup_mods_rimworld-openworld.py`
