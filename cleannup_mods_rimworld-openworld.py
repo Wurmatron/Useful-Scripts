@@ -21,9 +21,9 @@ def remove_extras_from_mod(folder):
                     shutil.rmtree(to_be_deleted)
                 else:
                     os.remove(to_be_deleted)
-                print("Removing -> " + to_be_deleted)
+                print("Removing -> " + to_be_deleted.encode('utf-8'))
             except Exception as ex:
-                print('Failed to delete ' + file_name)
+                print('Failed to delete ' + file_name.encode('utf-8'))
                 print(ex)
 
 
